@@ -1,0 +1,35 @@
+﻿@page 
+@model HotDrink.Pages.orderSummaryModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>orderSummary</title>
+</head>
+<body>
+    <h2>Order Summary</h2>
+    <p>Drink: @Model.Name</p>
+    @if (@Model.Strength != null)
+    {
+        <p>Strength: @Model.Strength</p>
+    }
+    @if (@Model.Sweetner != null)
+    {
+        <p>Sweetner: @Model.Sweetner</p>
+    }
+    @if (@Model.Extra != null)
+    {
+        <p>Extra: @Model.Extra</p>
+    }
+    @if (@Model.Delivery != null)
+    {
+<p>Delivery: @Model.Delivery</p>
+    }
+    
+</body>
+</html>

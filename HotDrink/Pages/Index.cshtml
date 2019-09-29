@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    @foreach (var item in @Model.drinks.HotDrinks)
+    {
+        @if (item.AvailableMonthStart <= DateTime.Now.Month && item.AvailableMonthEnd >=  DateTime.Now.Month)
+        {
+    <div class="itemBox">
+        <a asp-area="" asp-page="/Page2" asp-route-Name="@item.name">@item.name</a>
+
+    </div>
+        }
+    }
+</div>

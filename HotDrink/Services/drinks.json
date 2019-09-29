@@ -1,0 +1,99 @@
+{
+  "HotDrinks": [
+    {
+      "name": "Sort kaffe",
+      "strength": [ "mild", "medium", "strong" ],
+      "Sweetner": [ "Sugar", "Sirup" ],
+      "Extra": [ "Milk", "Cream" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+    {
+      "name": "Americano",
+      "strength": [ "mild", "medium", "strong" ],
+      "Sweetner": [ "Sugar", "Sirup" ],
+      "Extra": [ "Milk", "Cream" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+
+    {
+      "name": "Espresso",
+      "strength": [ "mild", "medium", "strong" ],
+      "Sweetner": [ "Sugar", "Sirup" ],
+      "Extra": [ "Milk", "Cream" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+
+    {
+      "name": "Varm vand",
+      "strength": null,
+      "Sweetner": null,
+      "Extra": null,
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+
+    {
+      "name": "Cafe latte",
+      "strength": [ "mild", "medium", "strong" ],
+      "Sweetner": [ "Sugar", "Sirup" ],
+      "Extra": [ "Milk", "Cream" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+
+    {
+      "name": "The",
+      "strength": null,
+      "Sweetner": [ "Sugar", "Sirup" ],
+      "Extra": [ "Milk", "Cream" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+
+    {
+      "name": "Grøn The",
+      "strength": null,
+      "Sweetner": [ "Sugar", "Sirup" ],
+      "Extra": [ "Milk", "Cream" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+
+    {
+      "name": "Kakao",
+      "strength": null,
+      "Sweetner": [ "Sugar" ],
+      "Extra": [ "Milk" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+
+    {
+      "name": "Chokolade",
+      "strength": null,
+      "Sweetner": [ "Sugar" ],
+      "Extra": [ "Milk", "Cream" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+    {
+      "name": "Irsk Kaffe",
+      "strength": [ "mild", "medium", "strong" ],
+      "Sweetner": [ "Sugar", "Sirup" ],
+      "Extra": [ "Milk", "Cream" ],
+      "AvailableMonthStart": 1,
+      "AvailableMonthEnd": 12
+    },
+    {
+      "name": "Gløgg",
+      "strength": null,
+      "Sweetner": null,
+      "Extra": [ "Rom" ],
+      "AvailableMonthStart": 12,
+      "AvailableMonthEnd": 12
+    }
+  ]
+}
