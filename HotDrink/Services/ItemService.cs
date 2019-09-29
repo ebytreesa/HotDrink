@@ -19,7 +19,7 @@ namespace HotDrink.Services
             //List<Item> items = new List<Item>() {
             //    new Item() { Id= 1, Name="cofee" }, new Item() { Id= 2, Name=
             //    "the"}};
-            DrinksJson drinks = JsonConvert.DeserializeObject<DrinksJson>(File.ReadAllText(@"Services/drinks.json"));
+            DrinksJson drinks = JsonConvert.DeserializeObject<DrinksJson>(File.ReadAllText(@"Data/drinks.json"));
            
             return drinks;
         }
