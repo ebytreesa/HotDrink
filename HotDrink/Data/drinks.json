@@ -6,7 +6,8 @@
       "Sweetner": [ "Sugar", "Sirup" ],
       "Extra": [ "Milk", "Cream" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "black_coffee.jpg"
     },
     {
       "name": "Americano",
@@ -14,7 +15,8 @@
       "Sweetner": [ "Sugar", "Sirup" ],
       "Extra": [ "Milk", "Cream" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "americano.jpg"
     },
 
     {
@@ -23,7 +25,8 @@
       "Sweetner": [ "Sugar", "Sirup" ],
       "Extra": [ "Milk", "Cream" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "espresso.jpg"
     },
 
     {
@@ -32,7 +35,9 @@
       "Sweetner": null,
       "Extra": null,
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "hot_water.jpg"
+
     },
 
     {
@@ -41,7 +46,9 @@
       "Sweetner": [ "Sugar", "Sirup" ],
       "Extra": [ "Milk", "Cream" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "cafe-latte.jpg"
+
     },
 
     {
@@ -50,7 +57,9 @@
       "Sweetner": [ "Sugar", "Sirup" ],
       "Extra": [ "Milk", "Cream" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "tea.jpg"
+
     },
 
     {
@@ -59,7 +68,9 @@
       "Sweetner": [ "Sugar", "Sirup" ],
       "Extra": [ "Milk", "Cream" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "green_tea.jpg"
+
     },
 
     {
@@ -68,7 +79,8 @@
       "Sweetner": [ "Sugar" ],
       "Extra": [ "Milk" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "kakao.jpg"
     },
 
     {
@@ -77,7 +89,8 @@
       "Sweetner": [ "Sugar" ],
       "Extra": [ "Milk", "Cream" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "choco.jpg"
     },
     {
       "name": "Irsk Kaffe",
@@ -85,7 +98,8 @@
       "Sweetner": [ "Sugar", "Sirup" ],
       "Extra": [ "Milk", "Cream" ],
       "AvailableMonthStart": 1,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "irish_coffee.jpg"
     },
     {
       "name": "Gløgg",
@@ -93,7 +107,8 @@
       "Sweetner": null,
       "Extra": [ "Rom" ],
       "AvailableMonthStart": 12,
-      "AvailableMonthEnd": 12
+      "AvailableMonthEnd": 12,
+      "image": "glogg.jpg"
     }
   ]
 }

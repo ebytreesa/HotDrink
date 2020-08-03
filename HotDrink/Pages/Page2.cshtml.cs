@@ -22,6 +22,7 @@ namespace HotDrink.Pages
         public string Sweetner { get; set; }
         public string Extra { get; set; }
         public string Delivery { get; set; }
+
         public Page2Model(IItemService itemService)
         {
             ItemService = itemService;
@@ -30,21 +31,19 @@ namespace HotDrink.Pages
         public void OnGet(string name)
         {
             DrinksJson drinks = ItemService.ReadAll();
-            Hotdrink d = drinks.HotDrinks.Where(i => i.name == name).FirstOrDefault();
-            
+            Hotdrink d = drinks.HotDrinks.Where(i => i.name == name).FirstOrDefault();            
             Item  = d;
-            //Name = name;
         }
-        public IActionResult OnPost()
-        {
-            var d = new Dictionary<string, string>() { { "Strength", Strength },
-                                                       { "Sweetner", Sweetner },
-                                                       { "Extra", Extra },
-                                                        { "Delivery", Delivery },
-                {"Name", Item.name }
-            };
+        //public IActionResult OnPost()
+        //{
+        //    var d = new Dictionary<string, string>() { { "Strength", Strength },
+        //                                               { "Sweetner", Sweetner },
+        //                                               { "Extra", Extra },
+        //                                                { "Delivery", Delivery },
+        //        {"Name", Item.name }
+        //    };
 
-            return new RedirectToPageResult("orderSummary",d);
-        }
+        //    return new RedirectToPageResult("orderSummary", d);
+        //}
     }
 }

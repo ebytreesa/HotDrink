@@ -1,7 +1,7 @@
 ﻿@page 
 @model HotDrink.Pages.orderSummaryModel
 @{
-    Layout = null;
+    ViewData["Title"] = "Order page";
 }
 
 <!DOCTYPE html>
@@ -30,6 +30,6 @@
     {
 <p>Delivery: @Model.Delivery</p>
     }
-    
+<img src="images/@Model.image" style="width:200px;height:170px; margin:0 auto; display:block;" />
 </body>
 </html>

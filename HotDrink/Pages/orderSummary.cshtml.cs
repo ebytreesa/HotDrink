@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HotDrink.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -15,11 +16,23 @@ namespace HotDrink.Pages
         public string Extra { get; set; }
         public string Delivery { get; set; }
         public string Name { get; set; }
+        public string image { get; set; }
         //public string Name { get; set; }
-        public void OnGet()
+        private readonly IItemService ItemService;
+
+        public orderSummaryModel(IItemService itemService)
         {
-            ViewData["confirmation"] = $"{Name} with {Strength}, will be made with {Sweetner}";
+            ItemService = itemService;
         }
-        
+        public void OnGet(string name)
+            {
+                DrinksJson drinks = ItemService.ReadAll();
+                Hotdrink d = drinks.HotDrinks.Where(i => i.name == name).FirstOrDefault();
+                image = d.image;
+                Name = d.name;
+
+            }
+            //ViewData["confirmation"] = $"{Name} with {Strength}, will be made with {Sweetner}";
+                
     }
 }

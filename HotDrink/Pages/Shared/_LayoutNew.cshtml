@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    <div class="container">
-        <header >
-            <nav style="border:1px solid red;" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container" >
-                    <h3>Welcome</h3>
-                </div>    
-            </nav>
+    <div class="container" style="background-color:#B28764; min-height:500px; padding-top:10px;">
+        <header>
+            @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">*@
+            <div class="container">
+                @*<h3>Welcome</h3>*@
+            </div>
+            @*</nav>*@
         </header>
-    @*</div>
-    
-    <div class="container">*@
-        <main role="main" class="pb-3">
+        @*</div>
+
+        <div class="container">*@
+        <main role="main" class="pb-3" style="margin-top:10px;">
             @RenderBody()
         </main>
+       
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2019 - HotDrink - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+            <a asp-area="" asp-page="/About">About</a>
+        </div>             
+        
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

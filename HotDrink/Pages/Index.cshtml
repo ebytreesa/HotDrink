@@ -3,19 +3,29 @@
 @{
     ViewData["Title"] = "Home page";
 }
-    <head>
-        <link href="@Url.Content("~/css/site.css")" rel="stylesheet" type="text/css" />
-        
-    </head>
+
+
 <div class="text-center">
+
     @foreach (var item in @Model.drinks.HotDrinks)
     {
-        @if (item.AvailableMonthStart <= DateTime.Now.Month && item.AvailableMonthEnd >=  DateTime.Now.Month)
+        if (item.AvailableMonthStart <= DateTime.Now.Month && item.AvailableMonthEnd >= DateTime.Now.Month)
         {
-    <div class="itemBox">
-        <a asp-area="" asp-page="/Page2" asp-route-Name="@item.name" id="@item.name.Replace(" ", "")">@item.name</a>
-
-    </div>
+            <div class="itemBox">
+                <a asp-area="" asp-page="/Page2" asp-route-Name="@item.name">
+                    <img src="images/@item.image" style="width:100px;height:50px; margin:0 auto; display:block;" />
+                    <div class="nameBox">
+                        @item.name
+                    </div>
+                </a>
+            </div>
+            
         }
     }
 </div>
+
+@*public Iactionresult create([Bind("name","age" ])Person person])
+    {
+    if(Modelstate.IsValid){return View("success")
+    else{}}
+    }*@

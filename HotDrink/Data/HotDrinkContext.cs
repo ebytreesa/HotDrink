@@ -13,6 +13,5 @@ namespace HotDrink.Models
         {
         }
 
-        public DbSet<Item> Item { get; set; }
     }
 }

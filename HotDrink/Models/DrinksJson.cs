@@ -12,4 +12,5 @@ public class Hotdrink
     public string[] Extra { get; set; }
     public int AvailableMonthStart { get; set; }
     public int AvailableMonthEnd { get; set; }
+    public string image { get; set; }
 }

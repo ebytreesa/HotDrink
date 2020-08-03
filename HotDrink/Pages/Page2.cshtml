@@ -1,58 +1,54 @@
 ﻿@page "{Name}"
 @model Page2Model
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "selection page";
 }
 
-<!DOCTYPE html>
-
-<html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Page2</title>
 </head>
 <body>
-    <h4>@Model.Item.name</h4>
-    <form method="post">
-        @if (Model.Item.strength != null)
-        {
-            <h6>Strength</h6> 
-            @foreach (var strengths in Model.Item.strength)
-            {
+    <h4>@Model.Item.name</h4><br />
 
-                    <input type="radio" asp-for="Strength" name="strength" value="@strengths" checked="checked" />@strengths 
-                 
-            }
-        }
-        <br />
-        @if (Model.Item.Sweetner != null)
-        {
-            <h6>Sweetner</h6> 
-            @foreach (var sweet in Model.Item.Sweetner)
-            {
+                             <form action="/orderSummary">
+                                 <input type="hidden" name="name" value="@Model.Item.name" />
+                                 @if (Model.Item.strength != null)
+                                 {
+                                     <h5>Strength:</h5>
+                                     @foreach (var strengths in Model.Item.strength)
+                                     {
+                                         <input type="radio" class="radioBtn" name="strength" value="@strengths" checked="checked" />@strengths
 
-                    <input type="radio" asp-for="Sweetner" name="sweetner" value="@sweet" />@sweet 
-                 
-            }
-        }
-        <br />
-        @if (Model.Item.Extra != null)
-        {
-            <h6>Extra</h6> 
-            @foreach (var extra in Model.Item.Extra)
-            {
+                                     }
+                                 }
 
-                    <input type="radio" asp-for="Extra" name="extra" value="@extra" />@extra 
-                
-            }
-        }
-        <br />
-        <h4>Delivery Method</h4>
-        <input type="radio" asp-for="Delivery" name="delivery" value="To Go" />To Go (Paper Cup)
-        <input type="radio" asp-for="Delivery" name="delivery" value="Drink here" checked="checked" />Drink here (Porcelain cup)
-        <br />
+                                 @if (Model.Item.Sweetner != null)
+                                 {
+                                     <h5>Sweetner:</h5>
+                                     @foreach (var sweet in Model.Item.Sweetner)
+                                     {
+                                         <input type="radio" class="radioBtn" name="sweetner" value="@sweet" />@sweet
 
-        <input type="submit" />
-    </form>
+                                     }
+                                 }
+                                 <br /> 
+                                 @if (Model.Item.Extra != null)
+                                 {
+                                     <h5>Extra:</h5>
+                                     @foreach (var extra in Model.Item.Extra)
+                                     {
+                                         <input type="radio" class="radioBtn" name="extra" value="@extra" />@extra
+
+
+                                     }
+                                 }
+                                 <br />
+                                 <h5>Delivery Method:</h5>
+                                 <input type="radio" class="radioBtn" name="delivery" value="To Go" />To Go (Paper Cup)
+                                 <input type="radio" class="radioBtn" name="delivery" value="Drink here" checked="checked" />Drink here (Porcelain cup)
+                                 <br /> <br />
+
+                                 <input type="submit" value="Get it" />
+                             </form>
 </body>
-</html>
